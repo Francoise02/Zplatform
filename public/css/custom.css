@@ -1,0 +1,147 @@
+/*===================================== 
+YOU CAN WRIGHT CUSTOME CSS 
+======================================*/
+
+/*==========
+POP UP WINDOW
+============= */
+.popup {
+ position: fixed;
+ top: 150px;
+ backdrop-filter: blur(7px);
+ right: 0;
+ display: flex;
+ color: rgb(255 255 255);
+ z-index: 99;
+ padding: 0 12px;
+ transition: transform 0.5s ease-in-out;
+}
+
+.hide {
+ opacity: 1;
+}
+
+.popup-message p{
+ font-size: 15px;
+ margin: auto;
+}
+
+.popup i {
+ margin: auto;
+ padding-right: 10px;
+ font-size: 20px;
+}
+
+.popup-success {
+ transform: translate(120%, -50%);
+ background: rgb(3 177 16 / 64%);
+ padding: 10px;
+}
+.popup-failure {
+ transform: translate(120%, -50%);
+ background: rgb(221 0 0 / 64%);
+ padding: 10px;
+}
+
+.popup-warning {
+ transform: translate(120%, -50%);
+ background: rgb(255 106 0 / 70%);
+ padding: 10px;
+}
+
+.popup-loading {
+ transform: translate(120%, -50%);
+ background: rgb(0 27 217 / 67%);
+ padding: 10px;
+}
+
+.reg-btn {
+ display: flex;
+}
+/*==========
+POP UP WINDOW
+============= */
+
+/*======== 
+LOGIN FORM
+========*/
+
+
+.forgot-password {
+ padding: 0;
+ margin: 0;
+ text-align: -webkit-right;
+}
+
+.login_banner_area .contact_form {
+ max-width: 500px;
+ transform: translate(-50%, -50%);
+ position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.login_banner_area .contact_form h2 {
+ padding-bottom: 33px;
+}
+
+.login_banner_area .contact_form .form-group {
+ margin-bottom: 10px;
+ background: #e8f0fe;
+ padding: 0 10px;
+}
+
+.login_banner_area .contact_form .form-group .form-control {
+ padding-left: 20px;
+ background: none;
+ border: none;
+}
+
+.login_banner_area .contact_form .form-group textarea {
+ resize: none;
+}
+.login_banner_area .contact_form .form-group textarea.form-control {
+ height: 140px;
+ width: -webkit-fill-available;
+}
+.login_banner_area .contact_form_text {
+ width: 100%;
+ padding: 0 5px;
+}
+.login_banner_area .contact_form_message {
+ width: 100%;
+ padding: 0 5px;
+}
+
+.form-group_icon {
+ display: flex;
+}
+.form-group_icon i {
+ font-size: 30px;
+ width: 40px;
+ margin: auto;
+ padding-right: 10px;
+}
+
+.login_banner_area .contact_form .submit_btn {
+ width: -webkit-fill-available;
+ margin-top: 20px;
+ color: white;
+ background: #001C4E;
+}
+
+@media (min-width:600px){
+ .welcome_icons{
+     display: block;
+ }
+ .welcome_icon{
+     margin-bottom: 10px;
+ }
+
+ .login_banner_area .contact_form .form-group .form-control {
+  width: 500px;
+ }
+ 
+}
+/* ---------
+LOGIN FORM
+------------ */

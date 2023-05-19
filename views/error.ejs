@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title><%= statusCode %> Error Page | Company Z</title>
+      <link rel="stylesheet" href="/css/error-style.css">
+      <link rel="icon" href="/img/favicon.png" type="image/png">
+   </head>
+   <body>
+      <div id="error-page">
+         <div class="content">
+            <h2 class="header" data-text="<%= statusCode %>">
+                <%= statusCode %>
+            </h2>
+            <h4 data-text="<%= message %>">
+                <%= message %>
+            </h4>
+            <p>
+                If you think something is broken, report a problem.
+            </p>
+            <div class="btns">
+               <a href="/">return home</a>
+               <a href="/contact">report problem</a>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
