@@ -1,0 +1,17 @@
+JWT_SECRET=any
+JWT_EXPIRES_IN=time
+JWT_COOKIE_EXPIRES_IN=time
+PORT=portnumber
+DATABASE=mongodbconnection
+DATABASE_TEST=mongodbtestconnection
+EMAIL_USERNAME=nodemailer_username
+EMAIL_PASSWORD=nodemailer_password
+EMAIL_PORT=nodemailer_port
+EMAIL_HOST=smtp.mailtrap.io
+EMAIL_FROM=sendgrid_email_for_production
+SENDGRID_USERNAME=sendgrid_username
+SENDGRID_PASSWORD=sendgrid_password
+NODE_ENV=development 
+CLOUDINARY_USER_NAME=username
+CLOUDINARY_API_KEY=api_key
+CLOUDINARY_API_SECRET=api_secret

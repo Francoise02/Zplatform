@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <title>My Profile</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendors/flaticon/flaticon.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="/vendors/linericon/style.css">
+    <link rel="stylesheet" href="/css/style-dash.css">
+    <link rel="stylesheet" href="/css/responsive-dash.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/so0w2koca3wk06nmj9s0okn47fusaoyc6t17rlnf1h8g5t2c/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+
+<body>
+    <%- include('../popup')
+    %>
+    <!--================Main Area =================-->
+    <div class="main">
+        <div class="container">
+            <!--=============modal Banner Area =================-->
+            <section class="menu_banner_area">
+                <div class="user-icon">
+                    <img src="/images/favicon.png"
+                        alt="">
+                    <a href="/">
+                       Company Z
+                    </a>
+                </div>
+                <div class="navbar-nav">
+                    <ul class="list basic_info">
+                        <li>
+                            <script>
+                                location.href.includes('profile') ? document.write(
+                                        '<a href="/admin/profile" class="active"><i class="lnr lnr-license"></i>') :
+                                    document
+                                    .write('<a href="/admin/profile"><i class="lnr lnr-license"></i>')
+                            </script>
+                            <p>Profile</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logout_btn" onclick="logoutDash()">
+                    <i class="lnr lnr-exit"></i> Logout
+                </div>
+            </section>
+            <!--================Menu Banner Area =================-->

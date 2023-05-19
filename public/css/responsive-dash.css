@@ -1,0 +1,17 @@
+
+@media (max-width:1350px){
+    .menu_banner_area{
+        margin-left: -258px;
+    }
+}
+@media (max-width:1300px){
+    .tables_flex{
+        display: block;
+    }
+
+    .tables_flex .main_content {
+        min-width: 100%;
+        flex: 1;
+        margin: 10px 20px;
+}
+}

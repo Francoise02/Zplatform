@@ -1,0 +1,123 @@
+<%- include('_header')%>
+
+<!--================Signup Banner Area =================-->
+<section class="login_banner_area">
+  <div class="container">
+    <form class="contact_form" action="#">
+      <h2>CREATE YOUR COMPANY Z ACCOUNT</h2>
+      <div class="contact_form_text">
+        <div class="form-group form-group_icon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" id="firstName" name="firstname" placeholder="Enter your first name" />
+        </div>
+        <div class="form-group form-group_icon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" id="lastName" name="lastname" placeholder="Enter your lastname" />
+        </div>
+            <div class="form-group form-group_icon">
+          <i class="fa fa-user"></i>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group form-group_icon">
+          <i class="fa fa-lock"></i>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" />
+        </div>
+           <div class="form-group form-group_icon">
+          <i class="fa fa-lock"></i>
+          <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Confirm your password" />
+        </div>
+          <div class="form-group form-group_icon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Enter your nationality" />
+        </div>
+            <div class="form-group form-group_icon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" />
+        </div>
+        <div class="form-group form-group_icon">
+          <i class="fa fa-user"></i>
+          <input type="number" class="form-control" id="Age" name="Age" placeholder="Enter your age" />
+        </div>
+        <div>
+        <!-- <label htmlFor="gender">Gender:</label> -->
+        <select class="form-control" id="gender" value={gender} placeholder="Select gender">
+          <option value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+        <div>
+        <!-- <label htmlFor="maritalStatus">Marital Status:</label> -->
+        <select class="form-control" id="maritalStatus" value={maritalStatus} placeholder="Select marital status">
+          <option value="">Select marital status</option>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Divorced">Divorced</option>
+          <option value="Widowed">Widowed</option>
+        </select>
+      </div>
+        <p class="forgot-password"><a href="/login">Already have an account? LOGIN</a></p>
+        <div class="submit_btn_disable_reg disible-control"></div>
+        <button type="submit" value="submit" id="signup" class="btn submit_btn">
+          SIGN UP
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+<!--================login Banner Area =================-->
+<script src="/js/signup.js"></script>
+
+
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+  <div class="loading-box"></div>
+  <div class="loading-pic">
+    <img src="/media/anime.gif" alt="">
+  </div>
+  </div>
+  <!-- LOADING AREA  END ====== -->
+  
+  <!-- JAVASCRIPT  FILES ========================================= --> 
+  <script  src="/js/jquery-1.12.4.min.js"></script><!-- JQUERY.MIN JS -->
+  <script  src="/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+  
+  
+  
+  <script  src="/js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+  
+  <script  src="/js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+  <script  src="/js/counterup.min.js"></script><!-- COUNTERUP JS -->
+  <script  src="/js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
+  
+  <script  src="/js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+  
+  <script  src="/js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+  
+  <script  src="/js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   --> 
+  <script  src="/js/scrolla.min.js"></script><!-- ON SCROLL CONTENT ANIMTE   --> 
+  <script  src="/js/map.script.js"></script><!-- MAP FUCTIONS [ this file use with google map]  -->
+  
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  <!--  Axios -->
+  
+  <script  src="/js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+  <script  src="/js/contactus.js"></script><!-- CONTACT US FUCTIONS  -->
+  <script  src="/js/shortcode.js"></script><!-- SHORT FUCTIONS  -->
+  <!-- REVOLUTION JS FILES -->
+  
+  <script  src="/plugin/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script  src="/plugin/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  
+  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+  <script  src="/plugin/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+  
+  <!-- REVOLUTION SLIDER SCRIPT FILES -->
+  <script  src="/js/rev-script-1.js"></script>
+  
+  
+  </body>
+  
+  
+  </html>

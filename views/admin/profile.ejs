@@ -1,0 +1,156 @@
+<%- include("_sidebar")%>
+<!--================Tables Banner Area =================-->
+<section class="tables_banner_area">
+    <div class="main_title">
+        <button class="navbar-toggler">
+            <span class="icon-bar"></span>
+            <span class="icon-bar icon-bar-a"></span>
+            <span class="icon-bar icon-bar-b"></span>
+        </button>
+        <span class="main_text">
+            <h2>My Profile</h2>
+
+        </span>
+    </div>
+    <div class="tables_flex">
+        <div class="main_content profile_widget">
+            <aside class="single_sidebar_widget ">
+                <img class="author_img rounded-circle"
+                src="http://res.cloudinary.com/francoise/image/upload/c_lfill,f_auto,g_auto,h_160,q_auto,w_160/v1680510708/<%= locals.user.image.split('/').pop() %>"
+                    alt="">
+                <h4>
+                    My Profile Details
+                </h4>
+                <div class="br"></div>
+            </aside>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr:nth-child(odd) {
+  background-color: #D6EEEE;
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+</style>
+<table style="width:100%">
+    <tr>
+    <td><b>ACCOUNT STATUS </b></td>
+    <td><%= locals.user.isVerified%></td>
+  </tr>
+  <tr>
+    <td><b>Names: </b></td>
+    <td><%= locals.user.firstName%> <%= locals.user.lastName%></td>
+  </tr>
+    <tr>
+        <td><b>Email: </b></td>
+        <td><%= locals.user.email%> </td>
+    </tr>
+    <tr>
+        <td><b>Nationality: </b></td>
+        <td><%= locals.user.nationality%></td>
+    </tr>
+        <tr>
+        <td><b>Gender: </b></td>
+        <td><%= locals.user.gender%> </td>
+    </tr>
+        <tr>
+        <td><b>Age: </b></td>
+        <td><%= locals.user.Age%></td>
+    </tr>
+    <tr>
+        <td><b>Phone number: </b></td>
+        <td><%= locals.user.phoneNumber%></td>
+    </tr>
+    <tr>
+        <td><b>Marital status: </b></td>
+        <td><%= locals.user.maritalStatus%></td>
+    </tr>
+</table>
+        </div>
+                <div class="main_content ">
+            <form class="contact_form" action="#" id="normal-data" method="post">
+                <div class="contact_form_text">
+                    <div class="form-group">
+                        <label for="">Profile Picture</label>
+                        <input type="file" class="form-control" id="image" name="image">
+                    </div>
+                    <button type="submit" value="submit" class="btn submit_btn">UPDATE PROFILE PICTURE</button>
+                    <!-- <br> 
+                </br>
+                 <br> 
+                </br> -->
+                </div></form>
+                 <form class="contact_form" action="#" id="verify-data" method="post">
+                <div class="contact_form_text">
+                    <!-- <div class="form-group">
+                        <label for="">Passport number or national ID</label>
+                        <input type="text" class="form-control" id="isVerified" name="isVerified" value="<%= locals.user.isVerified%>"
+                            placeholder="Passport or National ID">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="">Passport number or national ID</label>
+                        <input type="text" class="form-control" id="passport_nationalID" name="passport_nationalID" value="<%= locals.user.passport_nationalID%>"
+                            placeholder="Passport or National ID">
+                    </div>
+                       <div class="form-group">
+                        <label for="">Upload Passport/ID copy</label>
+                        <input type="file" class="form-control" id="identification_document" name="identification_document">
+                    </div>
+                </div>
+                   <button type="submit" value="submit" class="btn submit_btn">VERIFY PROFILE</button>
+                </form>
+
+            </form>
+            <form class="contact_form" action="#" id="password-data" method="post">
+
+                <div class="contact_form_text">
+
+                    <div class="form-group">
+                        <label for="chagep">New Password</label>
+                        <input type="password" class="form-control" id="npassword" name="password"
+                            placeholder="New password">
+                    </div>
+                    <div class="form-group">
+                        <label for="chagepn">Confirm New Password</label>
+                        <input type="password" class="form-control" id="cnpassword" name="password_confirm"
+                            placeholder="Confirm New password">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: rgb(105, 104, 104);">Old Password</label>
+                        <input type="password" class="form-control" id="oldpassword" name="password_current"
+                            placeholder="Verification Password">
+                    </div>
+                </div>
+
+                <button type="submit" value="submit" class="btn submit_btn">CHANGE PASSWORD</button>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+</div>
+<div class="main_footer">
+
+</div>
+
+</section>
+<!--================Tables Banner Area =================-->
+</div>
+</div>
+<!--================Main Area =================-->
+
+<!--  JavaScript -->
+<script src="/js/main-dash.js"></script>
+<script src="/js/profile.js"></script>
+
+<!--  JavaScript -->
+</body>
+
+</html>
