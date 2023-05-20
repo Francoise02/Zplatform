@@ -3,7 +3,6 @@
 /* eslint-disable import/no-named-as-default */
 import moongose from 'mongoose';
 import "dotenv/config";
-import open from "open";
 
 import app from './app.js';
 
@@ -22,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
   moongose.connect(DB).then(() => console.log('DB connected successfully !!'));
 } else if (process.env.NODE_ENV === 'development') { 
   moongose
-    .connect('mongodb://localhost:27017/users-new-db')
+    .connect(`mongodb://localhost:27017/${process.env.DATABASE_NAME}`)
     .then(() => console.log('DB connected successfully !'));
 }
 
