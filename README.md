@@ -3,7 +3,9 @@ Company Z provides essential online services for tens of thousands of users thro
 
 This repo contains the source code of the potential user account management on Zplatform with smooth onboarding process of new users while storing and managing user data with high security and scalability. This includes both the frontend and backend code.
 
-## prerequisites
+### [Video Walkthrough : Demo (CLICK ME)](https://drive.google.com/file/d/1nVlv0fVQCONGSGWQWuK0pHfqa_OZ03CQ/view?usp=sharing)
+
+## Prerequisites
 
 1. `Node.js`: Ensure that Node.js is installed on your machine. You can download and install it from the official Node.js website.
 2. `MongoDB`: Install MongoDB on your system. Visit the MongoDB website for instructions specific to your operating system. Make sure the MongoDB server is running before running the project.
