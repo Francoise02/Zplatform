@@ -45,8 +45,8 @@ export const signup = catchAsync(async (req, res, next) => {
   if (!req.body.password || !req.body.email) {
     return next(new AppError('Please fill empty fields!', 400));
   }
-  const userEmailExist = await userModel.findOne({ where: { email: req.body.email } });
-  if (userEmailExist) return next(new AppError('Email already registered!', 409));
+  // const userEmailExist = await userModel.findOne({ where: { email: req.body.email } });
+  // if (userEmailExist) return next(new AppError('Email already registered!', 409));
 
   const verificationToken = randomBytes(32).toString('hex');
   req.body.verificationToken = createHash('sha256')
